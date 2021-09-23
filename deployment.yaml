@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-app-deploy
+  name: print-name
   labels:
-    app: frontend-app
+    app: print-name
 spec:
   selector:
     matchLabels:
-      app: frontend-app
+      app: print-name
   replicas: 1
   template:
     metadata:
       labels:
-        app: frontend-app
+        app: print-name
     spec:
       containers:
-      - name: frontend-app-container
-        image: "docker.io/swethap99/frontend:latest"
+      - name: print-name-container
+        image: "rahulkrlti/hello:latest
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 80
+          - containerPort: 9000
