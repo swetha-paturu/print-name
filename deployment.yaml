@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: print-name-container
-        image: "rahulkrlt/hello:latest"
+        image: "rahulkrlti/hello:latest"
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 9000
