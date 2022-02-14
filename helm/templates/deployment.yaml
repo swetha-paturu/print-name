@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: print-name
+  labels:
+    app: print-name
+spec:
+  selector:
+    matchLabels:
+      app: print-name
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: print-name
+    spec:
+      containers:
+      - name: print-name-container
+        image: "rahulkrlti/hello:latest"
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: {{ .Values.container.containerPort }}
+
