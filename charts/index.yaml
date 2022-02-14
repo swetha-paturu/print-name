@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  print-name:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-02-14T12:46:34.513249+05:30"
+    description: A Helm chart to deploy swetha-paturu/print-name.git application
+    digest: c866fc283eef929ce53bb708cce4a62cb504a7f241195c4adba43a2d60e4830a
+    name: print-name
+    type: application
+    urls:
+    - print-name-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-02-14T12:46:34.504296+05:30"
